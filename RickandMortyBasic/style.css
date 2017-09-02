@@ -1,0 +1,266 @@
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: Gloria Hallelujah, arial, sans-serif, sans;
+		background: aliceblue;
+}
+
+h2 {
+	font-family: Architects Daughter, arial, sans-serif, sans;
+	text-align: center;
+}
+
+a { 
+	text-decoration: none;
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* unable to get overlay to work on class wrap...takes too long to increase padding for various sizes */
+.wrap{
+}
+
+
+/* ---- Title ---- */
+
+
+.main-header{
+  text-align: center;
+  font-size: .75em;
+  padding: 2em;
+  background: linear-gradient(#133,#135);
+  box-shadow: 0 1px 1px rgba(0,20,20,0.5)
+}
+
+.name {
+	width: 100%;
+}
+
+.subtitle {
+	line-height: .05;
+	text-align: center;
+	color: dodgerblue;
+	text-shadow: #39FF14 0px 0px 2px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* ---- Layout Containers ---- */
+.featured {
+	line-height: 1;
+	margin: 0.75em;
+}
+.slideshow {
+	height: 35vh;
+}
+
+.mySlides {
+		padding: 0 1em;
+		width: 100%;
+}
+
+/* ---- Page Elements ---- */
+
+.container {
+	margin-top:13%;
+	border: 1px solid black;
+}
+
+.first {
+	color: #3f4;
+	background: dodgerblue;
+	width: 100%;
+	padding: 0.5em;
+	text-shadow: 0px 1px 1px rgba(0,0,10,0.5);
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+.fan_challenge {
+	width: 100%;
+}
+
+p {
+	text-align: center;
+}
+
+#button{
+	margin: 10% 5%;
+	border: 1px solid #3F4;
+	border-radius: 5px;
+	background: #39FF14;
+	width: 90%;
+}
+
+footer {
+	text-align: center;
+	padding: 15px;
+	color: white;
+	background: dodgerblue;
+}
+
+#upload {
+}
+
+/* unsure how to make upload area smaller */
+.second {
+	width: 100%;
+}
+
+fieldset {
+	border: none;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+  
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 472px) {
+/* Styles */
+
+}
+
+@media (min-width: 540px){
+/* Styles */  
+
+}
+@media (min-width: 724px){
+ /* Styles */
+ 
+  .name {
+	  width:50%;
+	  padding: 4em;
+	  margin-left: 4em;
+  }
+  .subtitle {
+	  margin-top: -3%;
+	  font-size: 4.5em;
+  }
+  
+  .featured{
+	  padding: 2%;
+	  font-size: 2.5em;
+  }
+
+  .mySlides{
+	  padding: 0 10%;
+	  max-height: 200%;
+  }
+  .container{
+	  position: relative;
+	  margin-top: 32%;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .first{
+	  float:left;
+	  width: 50%;
+	  box-shadow: none;
+  }
+  .fan_challenge{
+	  width: 200px;
+	  height: 200px;
+	  margin-left: 34.5%;
+	  margin-right: 34.5%;
+  }
+  .second {
+	  float: right;
+	  width: 50%;
+	  text-align: center;
+	  margin-top: 2em;
+  }
+ .clear{
+	 clear: both;
+ }
+ footer {
+	 color: white;
+	 background: orange;
+	 border-top: 1px solid green;
+ }
+ #button{
+	 width: 30%;
+	 padding: 0.25em;
+ }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+  
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+   
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+  
+}
+
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
